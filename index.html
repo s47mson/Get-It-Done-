@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Get it Done!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,500,700|Poppins:400,500,700|Roboto:400,500,700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <h1>My to-do list</h1>
+    </header>
+
+    <form>
+      <input type="text" class="todo-input">
+      <button class="todo-button" type="submit" name="button">
+      <i class="fas fa-plus-square"></i>
+      </button>
+
+      <div class="select">
+        <select class="filter-todo" name="todos">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incompleted">Incompleted</option>
+        </select>
+
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
